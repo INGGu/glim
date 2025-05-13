@@ -1,0 +1,14 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n, int k) {
+    int food_price = 12000;
+    int drink_price = 2000;
+    int free_drinks = n / 10;
+    int paid_drinks = k - free_drinks;
+    
+    int answer = (n * food_price) + (paid_drinks * drink_price);
+    return answer;
+}
